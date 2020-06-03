@@ -73,7 +73,7 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
- {
+ul {
   list-style-type: none;
 }
 a {
@@ -84,6 +84,7 @@ img:not(.logo) {
 }
 img {
   display: block;
+  height: 175px;
 }
 
 h1,
@@ -93,8 +94,10 @@ h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
-  margin-bottom: 0.75rem;
+  /* margin-bottom: 0.75rem; */
+  margin: 0.75rem;
   font-family: var(--ff-primary);
+  color: var(--clr-green-dark);
 }
 h1 {
   font-size: 3rem;
@@ -189,9 +192,11 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+  border-bottom: 2px solid var(--clr-green-light);
 }
 .nav-toggle {
   font-size: 1.5rem;
+  /* color: var(--clr-green-dark); */
   color: var(--clr-primary-5);
   background: transparent;
   border-color: transparent;
@@ -199,7 +204,8 @@ nav {
   cursor: pointer;
 }
 .nav-toggle:hover {
-  color: var(--clr-primary-1);
+  /* color: var(--clr-primary-1); */
+  color: var(--clr-green-light);
   transform: rotate(90deg);
 }
 .logo {
@@ -216,7 +222,7 @@ nav {
 }
 .links a:hover {
   background: var(--clr-primary-8);
-  color: var(--clr-primary-5);
+  color: var(--clr-green-dark);
   padding-left: 1.5rem;
 }
 .social-icons {
@@ -265,10 +271,17 @@ nav {
   }
   .social-icons a {
     margin: 0 0.5rem;
-    color: var(--clr-primary-5);
+    color: var(--clr-green-dark);
+    /* color: var(--clr-primary-5); */
     transition: var(--transition);
   }
   .social-icons a:hover {
-    color: var(--clr-primary-7);
+    color: var(--clr-grey-3);
+  }
+
+  .bottom {
+    text-align: center;
+    margin: 2rem;
+
   }
 }
